@@ -90,9 +90,7 @@ const Home = () => {
         </div>
       </div>
       <HomeFooter />
-     <audio autoPlay  loop>
-        <source src={song} type="audio/mp3" />
-     </audio>
+     
  
     </div>
   );

@@ -37,9 +37,7 @@ const Podcast = () => {
           </div>
         </div>
       </div>
-      <audio autoPlay  loop>
-        <source src={song} type="audio/mp3" />
-     </audio>
+      
     </div>
   );
 };
