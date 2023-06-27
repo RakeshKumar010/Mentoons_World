@@ -6,7 +6,6 @@ import img_02 from '../assets/img_02.png'
 import img_03 from '../assets/img_03.png'
 import img_06 from '../assets/img_06.png'
 import img_07 from '../assets/img_07.png'
-import song from "../assets/song.mp3";
 
 import img_08 from '../assets/img_08.png'
 const Podcast = () => {

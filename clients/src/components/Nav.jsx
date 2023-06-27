@@ -2,11 +2,14 @@ import React from "react";
 import workshop from "../assets/workshop.png";
 import comics from "../assets/comics.png";
 import join from "../assets/join.png";
+import play from "../assets/play btn.png";
 import { Link } from "react-router-dom";
 const Nav = ({ logo }) => {
   return (
     <div className="nav_main">
+     
       <img src={logo} alt="logo" className="logo" />
+      
 
       <div className="nav_ul">
        
@@ -18,6 +21,9 @@ const Nav = ({ logo }) => {
         </Link>
         <Link to={"/join"}>
           <img src={join} alt="join" className="route" />
+        </Link>
+        <Link to={'/signup'}>
+          <img src={play} alt="play" className="route play_btn" />
         </Link>
       </div>
     </div>

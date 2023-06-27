@@ -18,7 +18,6 @@ import girl from "../assets/girl.png";
 import man_i from "../assets/man_1.png";
 import man_ii from "../assets/man_2.png";
 import ball from "../assets/home page-03.png";
-import song from "../assets/song.mp3";
 import HomeFooter from "./HomeFooter";
 import logo from '../assets/logo.png'
 

@@ -48,6 +48,9 @@
   /* animation-iteration-count: infinite; */
   animation-duration: 3s;
 }
+.play_btn{
+  mix-blend-mode: multiply;
+}
 @keyframes slider {
   0%{
     transform: translateX(800px);
@@ -255,6 +258,7 @@ line-height:1.5;
  width: 50%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .nav_ul a{
   text-decoration: none;
