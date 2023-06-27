@@ -1,31 +1,16 @@
 import React from "react";
-import workshop from "../assets/workshop.png";
-import comics from "../assets/comics.png";
-import join from "../assets/join.png";
-import play from "../assets/play btn.png";
+import logo from '../assets/logo.png'
+
 import { Link } from "react-router-dom";
-const Nav = ({ logo }) => {
+const Nav = () => {
   return (
     <div className="nav_main">
-     
+     <Link to={'/'}>
       <img src={logo} alt="logo" className="logo" />
+      </Link>
       
 
-      <div className="nav_ul">
-       
-        <Link to="/podcast">
-          <img src={workshop} alt="workshop" className="route workshop_route" />
-        </Link>
-        <Link to="comics">
-          <img src={comics} alt="comics" className="route" />
-        </Link>
-        <Link to={"/join"}>
-          <img src={join} alt="join" className="route" />
-        </Link>
-        <Link to={'/signup'}>
-          <img src={play} alt="play" className="route play_btn" />
-        </Link>
-      </div>
+      
     </div>
   );
 };

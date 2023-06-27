@@ -1,6 +1,7 @@
 import React from "react";
-import PodcastNav from "./PodcastNav";
 import earphonegirl from "../assets/img_05.png";
+import logo from '../assets/mentoons podcast.png'
+
 import guided from "../assets/img_01.png";
 import img_02 from '../assets/img_02.png'
 import img_03 from '../assets/img_03.png'
@@ -8,14 +9,17 @@ import img_06 from '../assets/img_06.png'
 import img_07 from '../assets/img_07.png'
 
 import img_08 from '../assets/img_08.png'
+import Nav from "./Nav";
 const Podcast = () => {
   return (
     <div className="podcast_main">
-      <PodcastNav />
+     <Nav/>
       <div className="podcast_content">
         <img src={earphonegirl} alt="earphonegirl" className="earphonegirl" />
         <div className="podcast_right_contaner">
           <div className="guided">
+        <img src={logo} alt="logo" className='podcast_nav_logo' />
+
             <img src={guided} alt="guided" className="guided_img" />
             <p className="podcast_para">
               Interactive platform where people in real situations share their

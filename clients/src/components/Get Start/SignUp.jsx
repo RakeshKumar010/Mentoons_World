@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import Boy from '../../assets/boy.png'
 import Logo from '../../assets/logo.png'
 import './SignUp.css'
+import Nav from '../Nav'
 const SignUp = () => {
     const navigater = useNavigate();
     const [data, setData] = useState({
@@ -43,6 +44,8 @@ const SignUp = () => {
     return (
         <>
             <div className='form_main'>
+                <Nav/>
+                <div className='form_body'>
                 <form className='form' action="/profile" method="post" encType="multipart/form-data" onSubmit={submitFun}>
                     <div className='form_div'>
                         <label htmlFor="name">Name</label>
@@ -72,10 +75,9 @@ const SignUp = () => {
                     </div>
                 </form>
                 <div className="right_content">
-                    <Link to={'/'} className='home_route_logo'>
-                    <img src={Logo} alt="logo" className='sighup_logo_img' />
-                    </Link>
+                    
                     <img src={Boy} alt="boy" className='signup_boy_img'/>
+                </div>
                 </div>
             </div>
         </>

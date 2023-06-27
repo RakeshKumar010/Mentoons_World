@@ -1,5 +1,4 @@
 import React from 'react'
-// import prepper from '../assets/prepper+.png'
 import speakEasy from '../assets/speak easy.png'
 import preppers from '../assets/preppers.png'
 import find from '../assets/find.png'

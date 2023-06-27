@@ -1,19 +1,18 @@
 import React, { useState } from 'react'
-import SpeakEasyNav from './SpeakEasyNav'
 import speak_easy from './png/speak easy page-20.jpg'
 import call_video from './png/speak easy page-17.jpg'
 import likely_text from './png/speak easy page-16.jpg'
 import rating from './png/speak easy page-21.jpg'
 import { AccoedingAPi } from './AccordionAPi'
-import bottom_content_img from './png/speak easy page-15.jpg'
 import Accordion from './Accordion'
+import Nav from '../Nav'
 
 
 const FirstPage = () => {
     const [data ,setData]=useState(AccoedingAPi)
     return (
         <div className='first_page'>
-            <SpeakEasyNav />
+            <Nav />
             <main>
                 <div class="top_content">
                     <img src={speak_easy} alt="speak easy" className="speak_easy" />
@@ -25,7 +24,7 @@ const FirstPage = () => {
                     <img src={likely_text} alt="text" className="likely_text" />
                 </div>
                 <div class="bottom_content">
-                    <img src={rating} alt="rating" id="rating" className="ratingClass" />
+                    
                     <div class="question_container">
                        {data.map((element)=>{
                         return(<>
@@ -56,7 +55,7 @@ const FirstPage = () => {
                             </div>
                         </div> */}
                     </div>
-                    <img src={bottom_content_img} alt="blank video" id="black_video" className="bottom_content_img" />
+                    <img src={rating} alt="rating" id="rating" className="ratingClass" />
                 </div>
             </main>
         </div>

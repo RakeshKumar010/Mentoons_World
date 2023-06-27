@@ -19,7 +19,6 @@
 .logo{
     width: 29%;
     margin-left: -2vw;
-    mix-blend-mode: multiply;
 
   
   }
@@ -76,9 +75,15 @@ font-size: 23px;
     object-position: 0 -1px;
     
   }
-  .top_content,.bottom_content{
+  .top_content{
     display: flex;
     justify-content: space-between;
+  }
+  .bottom_content{
+    display: flex;
+    justify-content: center;
+    gap: 37vw;
+
   }
   .bottom_content_img,.ratingClass{
     width: 30%;

@@ -18,8 +18,6 @@ import girl from "../assets/girl.png";
 import man_i from "../assets/man_1.png";
 import man_ii from "../assets/man_2.png";
 import ball from "../assets/home page-03.png";
-import HomeFooter from "./HomeFooter";
-import logo from '../assets/logo.png'
 
 const Home = () => {
     setTimeout(()=>{
@@ -39,7 +37,7 @@ const Home = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <Nav logo={logo} />
+      <Nav/>
       <div className="home_body">
         <div className="left_content">
           <img src={heading} alt="heading" className="heading" />
@@ -88,7 +86,6 @@ const Home = () => {
 
         </div>
       </div>
-      <HomeFooter />
      
  
     </div>
