@@ -1,0 +1,14 @@
+.linkedin_community_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:3vw 6vw;
+    background:linear-gradient( to top right, rgb(238, 150, 150), rgb(230, 230, 131));
+}
+.linkedin_community_unorder_list{
+    margin: 3vw;
+}
+.linkedin_community_body{
+    width: 50%
+}

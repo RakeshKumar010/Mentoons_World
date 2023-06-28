@@ -6,6 +6,7 @@ import Podcast from './components/Podcast'
 import SpeakEasy from './components/speak easy/SpeakEasy'
 import SignUp from './components/Get Start/SignUp'
 import LogIn from './components/Get Start/LogIn'
+import Linkedin_community from './components/linkedin community/Linkedin_community'
 const App = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const App = () => {
       <Route path='/speak-easy' element={<SpeakEasy/>}/>
       <Route path='/signup' element={<SignUp/>}/>
       <Route path='/login' element={<LogIn/>}/>
+      <Route path='/linkedin_community' element={<Linkedin_community/>}/>
     </Routes>
     </BrowserRouter>
         

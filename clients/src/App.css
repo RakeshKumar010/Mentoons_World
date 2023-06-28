@@ -256,13 +256,29 @@ line-height:1.5;
  
 }
 
-
+.linkedin_community_route{
+  width: 70%;
+}
 .nav_ul{
  width: 50%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
+.phone_route{
+  width: 20%;
+margin-top: 3vh;
+
+}
+.phone_img{
+  width: 100%;
+  /* margin-top: 1vh; */
+}
+.linkedin_community{
+  width: 100%;
+  mix-blend-mode: multiply;
+}
+
 .nav_ul a{
   text-decoration: none;
   color: black;

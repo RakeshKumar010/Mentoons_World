@@ -10,9 +10,10 @@
 }  
 /* first page style */
 .first_page{
-    padding: 0 3rem 2.5rem 3rem;
+  padding:3vw 6vw;
+
     background-image: url('./png/speak easy page-044.jpg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     
 }
