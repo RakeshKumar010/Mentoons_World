@@ -1,8 +1,10 @@
-import React from "react"; 
+import React from "react";
 import Nav from "./Nav";
 import Background from "../assets/background.png";
 import heading from "../assets/txt.png";
 import boy from "../assets/boy.png";
+import linkedinCommunity from '../assets/linkedin-community.jpg'
+import { Link } from "react-router-dom";
 import balance_txt from "../assets/balance_txt.png";
 import key from "../assets/key.png";
 import desktop from "../assets/desktop.png";
@@ -20,14 +22,14 @@ import man_ii from "../assets/man_2.png";
 import ball from "../assets/home page-03.png";
 
 const Home = () => {
-    setTimeout(()=>{
-        
-        let right_content_i_id =document.getElementById('right_content_i_id')
-        let right_content_ii_id =document.getElementById('right_content_ii_id')
-        right_content_i_id.style.display="block"
-        right_content_ii_id.style.display="none"
-        
-    },9000)
+  setTimeout(() => {
+
+    let right_content_i_id = document.getElementById('right_content_i_id')
+    let right_content_ii_id = document.getElementById('right_content_ii_id')
+    right_content_i_id.style.display = "block"
+    right_content_ii_id.style.display = "none"
+
+  }, 9000)
   return (
     <div
       className="home_main"
@@ -37,7 +39,7 @@ const Home = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <Nav/>
+      <Nav />
       <div className="home_body">
         <div className="left_content">
           <img src={heading} alt="heading" className="heading" />
@@ -57,7 +59,7 @@ const Home = () => {
         <div className="right_content_i" id="right_content_i_id">
           <img src={boy} alt="boy" className="boy" />
 
-          <img src={desktop} alt="desktop" className="desktop desktop_i"  />
+          <img src={desktop} alt="desktop" className="desktop desktop_i" />
           <img src={star} alt="star" className="star star_1" />
           <img src={star} alt="star" className="star star_2" />
           <img src={star} alt="star" className="star star_3" />
@@ -79,15 +81,19 @@ const Home = () => {
           <img src={ball} alt="ball" className="ball" />
         </div>
         <div className="right_content_ii" id="right_content_ii_id">
-        <img src={desktop} alt="desktop" className="desktop desktop_ii" />
-        <img src={girl} alt="girl" className="girl" />
-        <img src={man_i} alt="man_i" className="man_i" />
-        <img src={man_ii} alt="man_ii" className="man_ii" />
+          <img src={desktop} alt="desktop" className="desktop desktop_ii" />
+          <img src={girl} alt="girl" className="girl" />
+          <img src={man_i} alt="man_i" className="man_i" />
+          <img src={man_ii} alt="man_ii" className="man_ii" />
 
         </div>
+        <Link to={'/linkedin_community'} className="linkedin_community_route">
+          <img src={linkedinCommunity} alt="phone" className="linkedin_community" />
+        </Link>
+
       </div>
-     
- 
+
+
     </div>
   );
 };

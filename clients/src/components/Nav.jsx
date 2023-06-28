@@ -1,7 +1,6 @@
 import React from "react";
 import logo from '../assets/logo.png'
 import phone from '../assets/phone.png'
-import linkedinCommunity from '../assets/linkedin-community.jpg'
 import { Link } from "react-router-dom";
 const Nav = () => {
   return (
@@ -14,9 +13,7 @@ const Nav = () => {
       <Link to={'tel:+91 90360 33300'} className="phone_route">
         <img src={phone} alt="phone" className="phone_img" />
         </Link>
-        <Link to={'/linkedin_community'} className="linkedin_community_route">
-        <img src={linkedinCommunity} alt="phone" className="linkedin_community" />
-        </Link>
+       
       </div>
       
     </div>
