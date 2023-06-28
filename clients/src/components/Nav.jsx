@@ -11,7 +11,7 @@ const Nav = () => {
       </Link>
       
       <div className="nav_ul">
-      <Link to={'tel:5551234567'} className="phone_route">
+      <Link to={'tel:+91 90360 33300'} className="phone_route">
         <img src={phone} alt="phone" className="phone_img" />
         </Link>
         <Link to={'/linkedin_community'} className="linkedin_community_route">
